@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
-// Replace Geist fonts with similar Google ones
 const inter = Inter({
   variable: "--font-inter-sans",
   subsets: ["latin"],
@@ -15,7 +14,7 @@ const robotoMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: "Agentic AI",
-  description: "Smart AI-driven personal finance app",
+  description: "AI-driven personal finance advisor",
 };
 
 export default function RootLayout({
@@ -25,9 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${robotoMono.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${robotoMono.variable} antialiased`}>
         {children}
       </body>
     </html>

@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -75,31 +75,8 @@
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
-  --font-mono: "Geist Mono", "Geist Mono Fallback";
-
-  --color-primary: #1e40af;
-  --color-primary-dark: #1e3a8a;
-  --color-primary-light: #3b82f6;
-  --color-accent: #10b981;
-  --color-accent-light: #34d399;
-  --color-warning: #f59e0b;
-  --color-danger: #ef4444;
-
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f9fafb;
-  --color-bg-tertiary: #f3f4f6;
-
-  --color-text-primary: #111827;
-  --color-text-secondary: #6b7280;
-  --color-text-light: #9ca3af;
-
-  --color-border: #e5e7eb;
-  --color-border-light: #f3f4f6;
-
-  --radius: 0.5rem;
-
-  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -143,30 +120,6 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground;
   }
-}
-
-.bg-primary {
-  @apply bg-[#1e40af];
-}
-
-.text-primary {
-  @apply text-[#1e40af];
-}
-
-.bg-accent {
-  @apply bg-[#10b981];
-}
-
-.text-accent {
-  @apply text-[#10b981];
-}
-
-.bg-danger {
-  @apply bg-[#ef4444];
-}
-
-.text-danger {
-  @apply text-[#ef4444];
 }
